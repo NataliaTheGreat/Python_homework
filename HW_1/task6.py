@@ -19,7 +19,7 @@ while number > 0:
     digit = number % 10
     sum2 += digit
     number //= 10
-if sum==sum2:
+if sum == sum2:
     print ('yes')
 else:
     print ('no')   
