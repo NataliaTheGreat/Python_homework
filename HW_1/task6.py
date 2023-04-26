@@ -22,4 +22,4 @@ while number > 0:
 if sum == sum2:
     print('yes')
 else:
-    print ('no')   
+    print('no')   
