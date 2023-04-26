@@ -10,7 +10,7 @@ print ('Введите размер шоколадки m')
 m = int(input())
 print ('Введите размер долек k')
 k = int(input())
-if k < n * m and ((k % n == 0) or (k % m == 0)):
+if k < n * m and (k % n == 0 or k % m == 0):
     print('YES')
 else:
     print('NO')
