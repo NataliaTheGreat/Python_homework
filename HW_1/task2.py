@@ -3,7 +3,7 @@
 #100 -> 1 (1 + 0 + 0)
 
 print ('Введите трехзначное число')
-number=int(input())
+number = int(input())
 sum = 0
 while number > 0:
     sum += number % 10
