@@ -20,6 +20,6 @@ while number > 0:
     sum2 += digit
     number //= 10
 if sum == sum2:
-    print ('yes')
+    print('yes')
 else:
     print ('no')   
