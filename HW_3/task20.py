@@ -39,7 +39,7 @@ alfabet_rus = {'А': 1,'В': 1,'Е': 1,'И': 1,'Н': 1,'О': 1,'Р': 1,'С': 1,'
 slovo = input('Введите слово: ')
 slovo = slovo.upper() #переводим слово в верхний регистр
 sum = 0
-if slovo[0] in alfabet_eng.keys():
+if slovo[0] in alfabet_eng:
     for i in range(len(slovo)):  
       sum += alfabet_eng.get(slovo[i])
 else:
