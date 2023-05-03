@@ -7,12 +7,11 @@ print('Введите число элментов массива ')
 n = int(input())
 print('Введите искомое число ')
 x = int(input())
-lst = [random.randint(0, 20) for i in range(n)]
+lst = [random.randint(0, 20)]
 print(lst)
 cnt = 0
-for i in range(len(lst)-1):
+for i in lst:
     if lst[i] == x:
-#   if lst[i+1] > lst[i]:
      cnt += 1
 
 print(cnt)
