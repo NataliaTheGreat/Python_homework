@@ -22,7 +22,7 @@ print("Cамые близкие по величине элементы к зад
 
 for i in range(len(lst)):
    lst[i] = abs(lst[i] - )
-min=lst[i]
+min = lst[i]
 for i in range(len(lst)):
    if lst[i]<min and lst[i]!=0:
        min = lst[i]
