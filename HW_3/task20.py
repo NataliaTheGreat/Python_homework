@@ -18,14 +18,7 @@
 
 # ноутбук
 #     12
-#points= {'A: 1, 'E': '1','[DG]': '2', '[BCMP]': '3', '[FHVWY]': '4', 'K': '5', '[JX]': '8', '[QZ]': '19'}
-#print(points.keys(), end='')
-#print(points.get(A))
 
-# for i in slovo:
-#     #if i in points.keys():
-#         print(points[i], end='')
-# F, H, V, W, Y 
 alfabet_eng = {'A': 1,'E': 1,'I': 1,'O': 1,'U': 1,'L': 1,'N': 1,'S': 1,'T': 1,'R': 1,
                'D': 2, 'G': 2,
                'B': 3, 'C': 3,'M': 3, 'P': 3,
@@ -34,12 +27,25 @@ alfabet_eng = {'A': 1,'E': 1,'I': 1,'O': 1,'U': 1,'L': 1,'N': 1,'S': 1,'T': 1,'R
                'J': 8, 'X': 8,
                'Q': 10, 'Z': 10               
                }
+alfabet_rus = {'А': 1,'В': 1,'Е': 1,'И': 1,'Н': 1,'О': 1,'Р': 1,'С': 1,'Т': 1,
+               'Д': 2, 'К': 2,'Л': 2, 'М': 2,'П': 2, 'У': 2,
+               'Б': 3, 'Г': 3,'Ё': 3, 'Ь': 3,'Ь': 3,'Я': 3,
+               'Й': 4, 'Ы': 4,
+               'Ж': 5, 'З': 5,'Х': 5, 'Ц': 5,'Ч': 5,  
+               'Ш': 8, 'Э': 5,'Ю': 5, 
+               'Ф': 10, 'Щ': 10,'Ъ': 10,          
+               }
 
 slovo = input('Введите слово: ')
-slovo = slovo.upper()
-#print(len(find_movie)) 
+slovo = slovo.upper() #переводим слово в верхний регистр
 sum=0
-for i in range(len(slovo)):
-    ##print (movies.get(find_movie[i])) ##вывод индексов словаря
-    sum += alfabet_eng.get(slovo[i])
+if slovo[0] in alfabet_eng.keys():
+    for i in range(len(slovo)):  
+      sum += alfabet_eng.get(slovo[i])
+else:
+    for i in range(len(slovo)):  
+      sum += alfabet_rus.get(slovo[i])
 print ('Стоимость введенного слова',sum)
+
+#print(len(find_movie)) 
+##print (movies.get(find_movie[i])) ##вывод индексов словаря
