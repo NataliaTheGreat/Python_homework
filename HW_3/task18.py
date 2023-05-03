@@ -21,7 +21,7 @@ new_lst = lst.copy()
 print("Cамые близкие по величине элементы к заданному числу", x)
 
 for i in range(len(lst)):
-   lst[i] = abs(lst[i] -x)
+   lst[i] = abs(lst[i] - )
 min=lst[i]
 for i in range(len(lst)):
    if lst[i]<min and lst[i]!=0:
