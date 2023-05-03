@@ -28,7 +28,7 @@ for i in range(len(lst)):
        min = lst[i]
 for i in range(len(lst)):
    if lst[i] == min:
-      print(new_lst[i],end=' ')
+      print(new_lst[i], end=' ')
 print()  
       
 #print(lst)
