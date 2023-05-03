@@ -3,15 +3,15 @@
 #В последующих  строках записаны N целых чисел Ai (можно использовать псевдогенерацию). Последняя строка содержит число X.
 
 import random
-print('Введите число элментов массива ')
-n = int(input())
-print('Введите искомое число ')
-x = int(input())
-lst = [random.randint(0, 20)]
+n = int(input('Введите число элементов массива '))
+x = int(input('Введите искомое число '))
+lst = [random.randint(0, 20) for i in range(n)]
 print(lst)
 cnt = 0
-for i in lst:
-    if lst[i] == x:
+#for i in range(len(lst)):
+#    if lst[i] == x:
+for item in lst:
+    if item == x:
      cnt += 1
 
 print(cnt)
