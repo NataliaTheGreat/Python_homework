@@ -3,10 +3,8 @@
 # В последующих строках записаны N целых чисел Ai. Последняя строка содержит число X
 
 import random
-print('Введите число элментов массива ')
-n = int(input())
-print('Введите число ')
-x = int(input())
+n = int(input('Введите число элементов массива '))
+x = int(input('Введите число ' ))
 lst = [random.randint(0, 20) for i in range(n)]
 print("Наш исходный массив:", lst)
 
@@ -18,19 +16,21 @@ for y in lst:
 lst = temp
 new_lst = lst.copy()
 
-print("Cамые близкие по величине элементы к заданному числу", x)
+print("Cамые близкие по величине элементы к заданному числу", x,":")
 
 for i in range(len(lst)):
-   lst[i] = abs(lst[i] - )
+    lst[i] = abs(lst[i] - x)
 min = lst[i]
+for item in lst:
+    if item < min and item != 0:
+        min = item  
 for i in range(len(lst)):
-   if lst[i]<min and lst[i]!=0:
-       min = lst[i]
-for i in range(len(lst)):
-   if lst[i] == min:
-      print(new_lst[i], end=' ')
+    if lst[i] == min:
+       print(new_lst[i], end=' ')
+
 print()  
       
 #print(lst)
+#print(new_lst)
 #print (min)
 
