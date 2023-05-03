@@ -25,14 +25,20 @@
 # for i in slovo:
 #     #if i in points.keys():
 #         print(points[i], end='')
-movies = {'A': 1,'E': 1,'G': 2,'F': 5,}
+# F, H, V, W, Y 
+alfabet_eng = {'A': 1,'E': 1,'I': 1,'O': 1,'U': 1,'L': 1,'N': 1,'S': 1,'T': 1,'R': 1,
+               'D': 2, 'G': 2,
+               'B': 3, 'C': 3,'M': 3, 'P': 3,
+               'F': 4, 'H': 4,'V': 4, 'W': 4, 'Y': 4,
+               'K': 5,
+               'J': 8, 'X': 8,
+               'Q': 10, 'Z': 10               
+               }
 
 slovo = input('Введите слово: ')
-#print(find_movie[0])
-#print(len(find_movie))
+#print(len(find_movie)) 
 sum=0
 for i in range(len(slovo)):
-    ##print (movies.get(find_movie[i]))
-    sum += movies.get(slovo[i])
-    #print (sum (movies.get(fint_lst[i])))
+    ##print (movies.get(find_movie[i])) ##вывод индексов словаря
+    sum += alfabet_eng.get(slovo[i])
 print ('Стоимость введенного слова',sum)
