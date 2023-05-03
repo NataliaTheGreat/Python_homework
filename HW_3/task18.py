@@ -16,7 +16,7 @@ for y in lst:
  if y not in temp: 
    temp.append(y)
 lst = temp
-new_lst=lst.copy()
+new_lst = lst.copy()
 
 print("Cамые близкие по величине элементы к заданному числу", x)
 
