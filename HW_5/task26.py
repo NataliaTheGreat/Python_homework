@@ -6,7 +6,7 @@
 a = int(input("Введите первое число a: "))
 b = int(input("Введите второе число b: "))
 
-def power(c,d):
+def power(c, d):
     if d == 0: return 1
     else: return c*power(c,d-1)
     
