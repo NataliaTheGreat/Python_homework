@@ -4,9 +4,10 @@
 
 a = int(input("Введите первое неотрицательное число: "))
 b = int(input("Введите второе неотрицательноечисло: "))
-def summ(c,d):
-    if d == 0: return c
-    else: return summ(c+1,d-1)
+def summ(c, d):
+    if d == 0:
+        return c
+    return summ(c + 1, d - 1)
 if a < 0 or b < 0:
    print("Числа должны быть неотрицательные. Перезапустите программу")
 else:
