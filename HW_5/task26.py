@@ -11,4 +11,4 @@ def power(c, d):
         return 1
     return c * power(c, d - 1)
     
-print(f"a^b равно {power(a,b)}")
+print(f"a^b равно {power(a, b)}")
